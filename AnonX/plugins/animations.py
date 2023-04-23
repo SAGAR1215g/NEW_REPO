@@ -12,7 +12,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @app.on_message(
-    filters.command("love","I")
+    filters.command("love")
     & filters.group
     & ~filters.edited & filters.group & ~filters.edited)
 async def restart(client, m: Message):
