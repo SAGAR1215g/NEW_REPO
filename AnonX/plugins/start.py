@@ -1,5 +1,6 @@
 import asyncio
 import time
+import random
 
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
@@ -28,6 +29,7 @@ from AnonX.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
+CHAMPU = ["https://te.legra.ph/file/25ee7c99a0a690bc9214c.jpg","https://te.legra.ph/file/01c4b8a952caa98ae077d.jpg","https://te.legra.ph/file/0848d30b4393072249b1b.jpg","https://te.legra.ph/file/0d985f6ca9a4bd359850f.jpg"]
 
 
 @app.on_message(
@@ -204,7 +206,7 @@ async def start_comm(client, message: Message, _):
             try:
                 await message.reply_sticker("CAACAgUAAxkBAAIjTGKPYCq3keRZgNbshxtJ5k7H609OAAIZBgACYAF5VIerYoMcSln8JAQ")
                 await message.reply_photo(
-                    photo=config.START_IMG_URL,
+                    photo=AS,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
@@ -238,6 +240,7 @@ async def start_comm(client, message: Message, _):
 @LanguageStart
 async def testbot(client, message: Message, _):
     OWNER = OWNER_ID[0]
+    AS = random.choice(CHAMPU)
     out = start_pannel(_, app.username, OWNER)
     return await message.reply_photo(
                photo=config.START_IMG_URL,
