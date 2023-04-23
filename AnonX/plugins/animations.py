@@ -12,7 +12,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @app.on_message(
-    filters.command("love")
+    filters.command("love","I")
     & filters.group
     & ~filters.edited & filters.group & ~filters.edited)
 async def restart(client, m: Message):
@@ -58,12 +58,14 @@ async def restart(client, m: Message):
     await accha.edit("❣️")
     await asyncio.sleep(0.5)
     await accha.edit("ɪ")
-    await asyncio.sleep(0.5)
+    await asyncio.sleep(0.3)
     await accha.edit("ʟᴏᴠᴇ....🙈")
-    await asyncio.sleep(0.5)
+    await asyncio.sleep(0.3)
     await accha.edit("ʏᴏᴜ..🙊🙈")
-    await asyncio.sleep(0.5)
+    await asyncio.sleep(0.3)
     await accha.edit("ɪ ʟᴏᴠᴇ ʏᴏᴜ......💫💞")
+    await asyncio.sleep(2.9)
+    await accha.edit("💞🌹ᴀᴀʀᴏʜɪ ɪ ʟᴏᴠᴇ ʏᴏᴜ sᴏ ᴍᴜᴄʜ🌹💞")
     await asyncio.sleep(2.9)
     umm = await m.reply_sticker(
 
