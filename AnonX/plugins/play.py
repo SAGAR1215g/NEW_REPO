@@ -290,8 +290,6 @@ async def play_commnd(
             cap = _["play_11"].format(
                 details["title"], details["duration_min"]
             )
-           else:
-                return await mystic.edit_text(_["play_16"])
         elif await Instagram.valid(url):
             try:
                 details, track_id = await Instagram.track(url)
