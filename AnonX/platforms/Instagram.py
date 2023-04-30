@@ -8,8 +8,8 @@ from youtubesearchpython.__future__ import VideosSearch
 
 class InstagramAPI:
     def __init__(self):
-        self.regex = r"^(https:\/\/www.instagram.com/p/\/)(.*)$"
-        self.base = "https://www.instagram.com/"
+        self.regex = r"^(https:\/\/https://www.instagram.com/p/\/)(.*)$"
+        self.base = "https://www.instagram.com/p/"
 
     async def valid(self, link: str):
         if re.search(self.regex, link):
