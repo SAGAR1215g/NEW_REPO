@@ -10,7 +10,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from AnonX import (Apple, Resso, Instagram, SoundCloud, Spotify, Telegram,
                         YouTube, app)
 from AnonX.core.call import Anon
 from AnonX.utils import seconds_to_min, time_to_seconds
