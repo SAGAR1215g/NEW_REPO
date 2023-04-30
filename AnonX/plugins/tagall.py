@@ -5,7 +5,6 @@ import os
 import re
 import asyncio
 import time
-import events
 from AnonX import app 
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton 
