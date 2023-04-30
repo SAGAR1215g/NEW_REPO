@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from youtubesearchpython.__future__ import VideosSearch
 
 
-class RessoAPI:
+class InstagramAPI:
     def __init__(self):
         self.regex = r"^(https:\/\/www.instagram.com\/)(.*)$"
         self.base = "https://www.instagram.com/"
