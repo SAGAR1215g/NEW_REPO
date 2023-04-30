@@ -290,6 +290,18 @@ async def play_commnd(
             cap = _["play_11"].format(
                 details["title"], details["duration_min"]
             )
+           else:
+                return await mystic.edit_text(_["play_16"])
+        elif await Instagram.valid(url):
+            try:
+                details, track_id = await Instagram.track(url)
+            except Exception as e:
+                return await mystic.edit_text(_["play_3"])
+            streamtype = "youtube"
+            img = details["thumb"]
+            cap = _["play_11"].format(
+                details["title"], details["duration_min"]
+            )
         elif await SoundCloud.valid(url):
             try:
                 details, track_path = await SoundCloud.download(url)
