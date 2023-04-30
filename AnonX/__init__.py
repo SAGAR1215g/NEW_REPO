@@ -28,6 +28,7 @@ from .platforms import *
 
 YouTube = YouTubeAPI()
 Carbon = CarbonAPI()
+Instagram = InstagramAPI()
 Spotify = SpotifyAPI()
 Apple = AppleAPI()
 Resso = RessoAPI()
