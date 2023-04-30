@@ -1,11 +1,14 @@
+from pyrogram import Client, filters
+import requests
+import random
+import os
+import re
 import asyncio
+import time
+import events
+from AnonX import app 
 
-from telethon import events
-from telethon.errors import UserNotParticipantError
-from telethon.tl.functions.channels import GetParticipantRequest
-from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
-
-from AnonX import telethn as client
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton 
 
 spam_chats = []
 
