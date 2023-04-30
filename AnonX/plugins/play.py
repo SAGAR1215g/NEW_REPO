@@ -297,7 +297,7 @@ async def play_commnd(
                 return await mystic.edit_text(_["play_3"])
             streamtype = "youtube"
             img = details["thumb"]
-            cap = _["play_11"].format(
+            cap = _["play_7"].format(
                 details["title"], details["duration_min"]
             )
         elif await SoundCloud.valid(url):
